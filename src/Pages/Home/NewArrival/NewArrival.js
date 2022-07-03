@@ -2,10 +2,14 @@ import React from 'react';
 
 const NewArrival = () => {
     return (
-        <div>
-            <h>New Arrival</h>
-            <div>
-                <div class="card w-96 bg-base-100 shadow-xl">
+        <div className='my-12'>
+            <div className='flex justify-between content-between border-b mb-6 pb-3'>
+                <h className='text-5xl font-bold'>New Arrival</h>
+                <p><button className='btn btn-primary'>View ALL</button></p>
+            </div>
+            
+            <div className='grid grid-cols-6 gap-1 place-items-center'>
+                <div class="card w-48 bg-base-100 shadow-xl">
                     <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">
@@ -19,7 +23,7 @@ const NewArrival = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-48 bg-base-100 shadow-xl">
                     <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">
@@ -33,7 +37,7 @@ const NewArrival = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-48 bg-base-100 shadow-xl">
                     <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">
@@ -47,7 +51,7 @@ const NewArrival = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-48 bg-base-100 shadow-xl">
                     <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">
@@ -61,7 +65,7 @@ const NewArrival = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-48 bg-base-100 shadow-xl">
                     <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">
@@ -75,7 +79,7 @@ const NewArrival = () => {
                         </div>
                     </div>
                 </div>
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card w-48 bg-base-100 shadow-xl">
                     <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">
