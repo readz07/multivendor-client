@@ -5,7 +5,7 @@ const NewArrival = () => {
         <div className='my-12'>
             <div className='flex justify-between content-between border-b mb-6 pb-3'>
                 <h className='text-5xl font-bold'>New Arrival</h>
-                <p><button className='btn btn-primary'>View ALL</button></p>
+                <p><button className='btn btn-primary text-white'>View ALL</button></p>
             </div>
             
             <div className='grid grid-cols-6 gap-1 place-items-center'>
