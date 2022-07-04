@@ -1,11 +1,11 @@
 import React from 'react';
-
+import { Link } from "react-router-dom";
 const Header = () => {
     const topNav = <>
-        <li><a>Item 1</a></li>
+        
         <li tabindex="0">
             <a className="justify-between">
-                Parent
+                All Categories
                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
             </a>
             <ul className="p-2">
@@ -13,10 +13,18 @@ const Header = () => {
                 <li><a>Submenu 2</a></li>
             </ul>
         </li>
-        <li><a>Item 3</a></li>
+        <li><Link to='/'> Home</Link></li>
+        <li><Link to='/about'>About</Link></li>
+        <li><Link to='/profile'>My Profile</Link></li>
+        <li><a>Today's Deal</a></li>
+        <li><a>Coupon</a></li>
+        <li><a>Customer Care</a></li>
+        <li><a>Become Seller</a></li>
+        <li><a>Help?</a></li>
+
     </>
     return (
-        <div className="navbar border-b border-rose-100 ">
+        <div className="navbar">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabindex="0" className="btn btn-ghost lg:hidden">
@@ -34,7 +42,8 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Sign In / Sign Out</a>
+                <Link to='/signin' className='btn btn-sm mr-2'>Sign In</Link>
+                <Link to='/signup' className='btn btn-sm'>Sign Up</Link>
             </div>
         </div>
     );
